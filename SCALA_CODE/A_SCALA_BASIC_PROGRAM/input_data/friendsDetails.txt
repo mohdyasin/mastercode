@@ -1,0 +1,8 @@
+Name	Age	NumberOfFriends
+Ajay	23	13
+Raju	23	20
+Rakesh	28	19
+Mahesh	27	16
+Rahul	26	23
+Prakash	28	17
+Papu	28	14
