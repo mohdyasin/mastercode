@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="driveref" class="dependency.check.all.Driving.java">
+		<property name="driver" value="driver"></property>
+	</bean>
+	
+	<bean id="carref" class="dependency.check.all.Car" dependency-check="all">
+		<property name="breaks" value="nice breaks"></property>
+		<property name="driving" ref="driveref"></property>
+	</bean>
+
+</beans>

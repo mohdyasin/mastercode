@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	
+	<bean id="emp1" class="com.beanconfigurationlevelinheritance.exmaple.Employee">
+		
+		<property name="eno" value="1001" />
+		<property name="ename" value="Yasin" />
+		<property name="sal" value="2500" />
+		<property name="desig" value="SSE" />
+		<property name="hno" value="131 by 153" />
+		<property name="city" value="kanpur" />
+		
+	</bean>
+	<bean id="emp2" class="com.beanconfigurationlevelinheritance.exmaple.Employee" parent="emp1">
+		
+		<property name="eno" value="1002" />
+		<property name="desig" value="SSE2" />
+		<property name="hno" value="131 by 1532" />
+		
+	</bean>
+	<bean id="emp3" class="com.beanconfigurationlevelinheritance.exmaple.Employee" parent="emp1">
+		
+		<property name="eno" value="1003" />
+		<property name="desig" value="SSE3" />
+		<property name="hno" value="131 by 1533" />
+		
+	</bean>
+	
+</beans>

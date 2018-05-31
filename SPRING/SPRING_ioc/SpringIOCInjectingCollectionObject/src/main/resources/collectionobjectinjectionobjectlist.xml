@@ -1,0 +1,42 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="s1" class="com.collectionobject.injection.objectlist.Student">
+		<!-- Parent Inherited Properties -->
+		<property name="sno" value="1001" />
+		<property name="name" value="Sekhar" />
+		<property name="fee" value="2500" />
+    </bean>
+    
+	<bean id="s2" class="com.collectionobject.injection.objectlist.Student">
+		<!-- Parent Inherited Properties -->
+		<property name="sno" value="1002" />
+		<property name="name" value="Sekhar_2" />
+		<property name="fee" value="25004" />
+    </bean>
+
+	<bean id="s3" class="com.collectionobject.injection.objectlist.Student">
+		<!-- Parent Inherited Properties -->
+		<property name="sno" value="1003" />
+		<property name="name" value="Sekhar_3" />
+		<property name="fee" value="25005" />
+    </bean>
+    <bean id="collegeNameRef" class="java.lang.String">
+     <constructor-arg value="Sri Indu College"></constructor-arg>
+    </bean>
+    
+    <bean id="college" class="com.collectionobject.injection.objectlist.College">
+    	<property name="name" ref="collegeNameRef"></property>
+    	<property name="students">
+			<list>
+				<ref bean="s1"></ref>
+				<ref bean="s2"></ref>
+				<ref bean="s3"></ref>
+			</list>
+		</property>		
+    </bean>
+	
+</beans>

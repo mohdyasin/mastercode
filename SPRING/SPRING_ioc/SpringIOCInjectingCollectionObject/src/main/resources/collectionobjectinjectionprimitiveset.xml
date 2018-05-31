@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="ibref" class="com.collectionobject.injection.primitivesset.InstituteBean">
+		<!-- Parent Inherited Properties -->
+		<property name="name" value="Mohd Yasin Usman Ansari" />
+
+		<property name="facultyNames">
+			<set>
+				<value>sekhar</value>
+				<value>lnrao</value>
+				<value>narayan</value>
+			</set>
+		</property>		
+		<property name="courseNames">
+			<set>
+				<value>java</value>
+				<value>spring</value>
+				<value>hibernate</value>
+			</set>
+		</property>		
+	</bean>
+	
+</beans>

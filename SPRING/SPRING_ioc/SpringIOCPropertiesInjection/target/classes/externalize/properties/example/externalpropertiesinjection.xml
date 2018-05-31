@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="\externalize\properties\example\DBProperties.properties"></property>
+	</bean>
+	<bean id="dbpropsref" class="externalize.properties.example.DBPropertiesBean">
+		<property name="username" value="${un}"></property>
+		<property name="password" value="${pwd}"></property>
+		<property name="url" value="${url}"></property>
+		<property name="driverClass" value="${dc}"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<bean id="child" class="com.beanlevelinheritance.exmaple.Child">
+		<!-- Parent Inherited Properties -->
+		<property name="money" value="100" />
+		<property name="propDocs" value="Power Of Enterny" />
+		<property name="diseases" value="Dengue" />
+		
+		<!-- Child Inherited Properties -->
+		<property name="badHabbits" value="smoking" />
+		<property name="knowledge" value="Java" />
+		
+	</bean>
+	
+</beans>
