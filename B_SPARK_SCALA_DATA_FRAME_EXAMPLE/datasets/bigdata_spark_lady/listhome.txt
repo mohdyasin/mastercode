@@ -1,0 +1,4 @@
+street,zip,price
+BegumPurwa,208023,500
+BegumPurwa1,208024,600
+BTM,560068,1000

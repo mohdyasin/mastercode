@@ -1,0 +1,5 @@
+id,lastName,typeOfSub
+101,Ruetli,AG
+102,Brelaz,DemiTarif
+103,Gress,DemiTarif
+104,Schatten,DemiTarif
